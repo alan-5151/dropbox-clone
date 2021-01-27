@@ -9,7 +9,7 @@ router.get("/", function (req, res, next) {
 
 router.post("/upload", (req, res) => {
   let form = new formidable.IncomingForm({
-    uploadDir: "/upload",
+    uploadDir: "./upload",
     keepExtensions: true,
   });
 
